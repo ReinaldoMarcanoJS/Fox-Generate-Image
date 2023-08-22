@@ -14,7 +14,6 @@ const generateId = (): string => {
   );
 };
 
-
 const Home: NextPage = () => {
   const [images, setImages] = useState<Array<IFoxImageItem>>([]);
 
@@ -26,7 +25,6 @@ const Home: NextPage = () => {
     };
 
     setImages([...images, newImageItem]);
-    window.plausible("add_fox");
   };
 
   const onLazyLoad = (node: HTMLImageElement): void => {
@@ -61,7 +59,7 @@ const Home: NextPage = () => {
             Add New Fox
           </button>
         </div>
-        <div className="grid px-20 w-screen items-start grid-cols-5 ">
+        <div className="grid sm:grid-cols-1 px-4 w-screen items-start md:grid-cols-2 md:px-8 lg:grid-cols-4 lg:px-14 xl:grid-cols-5 xl:px-20" >
           {images.map(({ id, url }) => (
             <div
               className="mt-4 p-4 flex items-center justify-center h-full w-full "
