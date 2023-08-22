@@ -14,9 +14,6 @@ const generateId = (): string => {
   );
 };
 
-type onlazyLoadProps = {
-  node: boolean;
-};
 
 const Home: NextPage = () => {
   const [images, setImages] = useState<Array<IFoxImageItem>>([]);
@@ -73,6 +70,7 @@ const Home: NextPage = () => {
                 onlazyLoad={onLazyLoad}
                 src={url}
                 width="320"
+                alt="FOX"
                 height="auto"
                 className="mx-auto rounded-md bg-gray-300 shadow-2xl shadow-sky-300"
                 onClick={() => {

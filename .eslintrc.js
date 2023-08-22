@@ -13,6 +13,8 @@ module.exports = {
       "react/no-unescaped-entities": "off",
       "@next/next/no-page-custom-font": "off",
       "@next/next/no-img-element": "off",
-      "jsx-ally/alt/text" : "off"
+      "jsx-ally/alt/text" : "off",
+      "no-html-link-for-pages": off,
+
     }
 }
